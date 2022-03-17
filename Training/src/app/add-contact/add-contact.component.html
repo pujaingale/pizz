@@ -1,0 +1,116 @@
+<p>add-contact works!</p>
+<div class="container">
+    <form [formGroup]="LoginForm" (ngSubmit)="GetDetails()">
+        <div class="form-group">
+            <label>First name</label>
+            <input type="text" name="firstName" class="form-control" formControlName="firstName" required/>
+            <div *ngIf="(f['firstName'].touched || f['firstName'].dirty) && f['firstName'].invalid" class="alert alert-danger">
+                <div *ngIf="f['firstName'].errors?.['required']">
+                    First Name is required.
+                </div>
+                <div *ngIf="f['firstName'].errors?.['pattern']">
+                    Only letters are allowed.
+                </div>
+            </div>
+           
+        </div>
+        <div class="form-group">
+            <label>Last name</label>
+            <input type="text" name="LastName" class="form-control" formControlName="LastName" />
+            <div *ngIf="(f['LastName'].touched || f['LastName'].dirty) && f['LastName'].invalid" class="alert alert-danger">
+                <div *ngIf="f['LastName'].errors?.['required']">
+                    Last name is required.
+                </div>
+                <div *ngIf="f['LastName'].errors?.['pattern']">
+                    Only letters are allowed.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Age</label>
+            <input type="text" name="Age" class="form-control" formControlName="Age" />
+            <div *ngIf="(f['Age'].touched || f['Age'].dirty) && f['Age'].invalid" class="alert alert-danger">
+                <div *ngIf="f['Age'].errors?.['required']">
+                    Age is required.
+                </div>
+                <div *ngIf="f['Age'].errors?.['pattern']">
+                    Age is required only numeric value.
+                </div>
+                <div *ngIf="f['Age'].errors?.['ageError']">
+                    Age ranges between 12-50.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Qualification</label>
+            <input type="text" name="Qualification" class="form-control" formControlName="Qualification" />
+            <div *ngIf="(f['Qualification'].touched || f['Qualification'].dirty) && f['Qualification'].invalid" class="alert alert-danger">
+                <div *ngIf="f['Qualification'].errors?.['required']">
+                    Qualification is required.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Contact Number</label>
+            <input type="text" name="ContactNumber" class="form-control" formControlName="ContactNumber" />
+            <div *ngIf="(f['ContactNumber'].touched || f['ContactNumber'].dirty) && f['ContactNumber'].invalid" class="alert alert-danger">
+                <div *ngIf="f['ContactNumber'].errors?.['required']">
+                    ContactNumber is required.
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="Password" class="form-control" formControlName="Password" />
+            <div *ngIf="(f['Password'].touched || f['Password'].dirty) && f['Password'].invalid" class="alert alert-danger">
+                <div *ngIf="f['Password'].errors?.['required']">
+                    Password is required.
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" name="ConfirmPassword" class="form-control" formControlName="ConfirmPassword" />
+            <div *ngIf="(f['ConfirmPassword'].touched || f['ConfirmPassword'].dirty) && f['ConfirmPassword'].invalid" class="alert alert-danger">
+                <div *ngIf="f['ConfirmPassword'].errors?.['required']">
+                    ConfirmPassword is required.
+                </div>
+                <div *ngIf="f['ConfirmPassword'].errors?.['confirmedValidator']">
+                    Pass n con must be same.
+                </div>
+                
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Gender :</label>
+            <input type="radio" value="male" formControlName="gender" /> Male
+            <input type="radio" value="female" formControlName="gender" /> Female
+            <div *ngIf="(f['gender'].touched || f['gender'].dirty) && f['gender'].invalid" class="alert alert-danger">
+                <div *ngIf="f['gender'].errors?.['required']">
+                    Gender should be selected.
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Courses</label>
+            <input type="checkbox" value="PHP" formControlName="checkbox"> PHP
+            <input type="checkbox" value="JAVA" formControlName="checkbox"> JAVA
+            <input type="checkbox" value="PYTHON" formControlName="checkbox"> PYTHON
+            <input type="checkbox" value="DOTNET" formControlName="checkbox"> DOTNET
+            <div *ngIf="(f['checkbox'].touched || f['checkbox'].dirty) && f['checkbox'].invalid" class="alert alert-danger">
+                <div *ngIf="f['checkbox'].errors?.['required']">
+                    Please select at least one of the input.
+                </div>
+            </div>
+        </div>
+        <br>
+        <button class="btn btn-success" type="submit" [disabled]="LoginForm.invalid">Submit form</button>
+
+    </form>
+
+
+</div>

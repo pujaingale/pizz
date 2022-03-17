@@ -1,0 +1,19 @@
+<p>gallery works!</p>
+<table class="table">
+    <tr>
+        <td width="30%">
+            <ul>
+            <li><a routerLink="noida">Noida</a></li>
+            <li><a routerLink="delhi">Delhi</a></li>
+        </ul>
+        </td>
+        <td>
+            <router-outlet></router-outlet>
+        </td>
+    </tr>
+</table>
+<div *ngFor="let s of prodDat">
+    <h1>{{s.id}}</h1>
+    <h1>{{s.name}}</h1>
+    <h1>{{s.age}}</h1>
+</div>

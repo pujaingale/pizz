@@ -1,0 +1,32 @@
+<p>add-product works!</p>
+<form #myForm="ngForm" (ngSubmit)="AddProduct(myForm.value)">
+    <div class="form-group">
+        <label>
+            pname
+        </label>
+        <input type="text" class="form-control" ngModel name="pname" #pn="ngModel" required>
+        <div *ngIf="pn.touched && pn.invalid" class="alert alert-danger">
+            <div *ngIf="pn.errors?.['required']">Pname is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>
+            price
+        </label>
+        <input type="text" class="form-control" ngModel name="price" #pr="ngModel" required>
+        <div *ngIf="pr.touched && pr.invalid" class="alert alert-danger">
+            <div *ngIf="pr.errors?.['required']">price is required</div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>
+            quantity
+        </label>
+        <input type="text" class="form-control" ngModel name="quantity" #qn="ngModel" required>
+        <div *ngIf="qn.touched && qn.invalid" class="alert alert-danger">
+            <div *ngIf="qn.errors?.['required']">quantity is required</div>
+        </div>
+    </div>
+    <br>
+    <button type="Submit" class="btn btn-success" [disabled]="myForm.invalid">Add</button>
+</form>

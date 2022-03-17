@@ -1,0 +1,12 @@
+.tr{
+    position: relative;top: -250px;left: -500px;
+    color: #000;
+}
+.vl {
+    border-left: 2px solid  grey;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;bottom: -200px;top:200px;
+  }
+ 

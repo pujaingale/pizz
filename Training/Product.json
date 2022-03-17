@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "pname": "pb",
+      "price": "1234",
+      "quantity": "4",
+      "id": 2
+    },
+    {
+      "pname": "pb",
+      "price": "1234",
+      "quantity": "4",
+      "id": 3
+    },
+    {
+      "pname": "pb",
+      "price": "1234",
+      "quantity": "4",
+      "id": 4
+    }
+  ]
+}

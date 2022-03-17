@@ -1,0 +1,30 @@
+<p>{{catName}} Products</p>
+<table class="table">
+    <thead>
+        <tr class="colspan-5">
+            <a routerLink="/addProduct">Add product</a>
+        </tr>
+        <tr>
+            <th>Sr.No</th>
+            <th>P Name</th>
+            <th>prize</th>
+            <th>Quantity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of proData; let i =index;">
+            <td>{{i+1}}</td>
+            <td>{{p.pname}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.quantity}}</td>
+            <td><button (click)="DeleteProd(p.id)">delete</button></td>
+        </tr>
+    </tbody>
+</table> 
+<!-- <div *ngFor="let p of proData">
+   {{p.pname}}
+    {{p.price}}
+    {{p.quantity}}
+    delete
+</div> -->

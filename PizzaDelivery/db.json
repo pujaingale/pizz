@@ -1,0 +1,68 @@
+{
+  "signup": [
+    {
+      "username": "puja.ingle78@gmail.com",
+      "fullname": "Puja Ingale",
+      "address": "Om colony 1,Chinchwad",
+      "contactnumber": "12345678",
+      "Password": "asjdsfhr",
+      "id": 1
+    },
+    {
+      "username": "viarat",
+      "fullname": "kohali",
+      "address": "delhi",
+      "contactnumber": "9090900889",
+      "Password": "password",
+      "id": 2
+    },
+    {
+      "username": "puja.ingle78@gmail.com",
+      "fullname": "Puja Ingale",
+      "address": "Om colony 1,Chinchwad",
+      "contactnumber": "9090900889",
+      "Password": "asjdsfhr",
+      "id": 3
+    },
+    {
+      "username": "puja.ingle78@gmail.com",
+      "fullname": "Puja Ingale",
+      "address": "Om colony 1,Chinchwad",
+      "contactnumber": "9090900889",
+      "Password": "asjdsfhr",
+      "id": 4
+    },
+    {
+      "username": "viarat",
+      "fullname": "kohali",
+      "address": "Om colony 1,Chinchwad",
+      "contactnumber": "9090900889",
+      "Password": "asjdsfhr",
+      "id": 5
+    },
+    {
+      "username": "puja.ingle78@gmail.com",
+      "fullname": "Puja Ingale",
+      "address": "Om colony 1,Chinchwad",
+      "contactnumber": "9090900889",
+      "Password": "asjdsfhr",
+      "id": 6
+    },
+    {
+      "username": "Umesh15@107",
+      "fullname": "Puja Ingale",
+      "address": "Om colony 1,Chinchwad",
+      "contactnumber": "9090900889",
+      "Password": "1q2w3e4r5t6y",
+      "id": 7
+    },
+    {
+      "username": "",
+      "fullname": "",
+      "address": "",
+      "contactnumber": "",
+      "Password": "",
+      "id": 8
+    }
+  ]
+}
